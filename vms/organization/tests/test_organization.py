@@ -176,12 +176,12 @@ class OrganizationTest(LiveServerTestCase):
 
         # Navigate to Organization Edit
         organization_page.fill_organization_form(
-            'Systers Open-Source Community'
+            'Anita Borg Open-Source Community'
         )
         # Correctness.
         self.assertEqual(
             organization_page.get_org_name(),
-            'Systers Open-Source Community'
+            'Anita Borg Open-Source Community'
         )
 
     def test_create_duplicate_organization(self):
@@ -227,7 +227,7 @@ class OrganizationTest(LiveServerTestCase):
 
         # Navigate to Organization Edit
         organization_page.fill_organization_form(
-            'Systers Open~Source Community'
+            'Anita Borg Open~Source Community'
         )
 
         # Check Error
